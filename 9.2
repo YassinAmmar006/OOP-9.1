@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+class Book
+{
+private:
+string title;
+
+public:
+Book()
+{
+title = "The Blood";
+author = "Robert smith";
+price = "150";
+}
+string thetitle()
+{
+    return title;
+}
+private:
+string author;
+ public:
+ string theauthor()
+{
+    return author;
+}
+private:
+string price;
+public:
+string theprice()
+{
+    return price;
+}
+
+};
+
+int main()
+{
+     Book c1;
+     cout<<c1.thetitle()<<endl;
+     cout<<c1.theauthor()<<endl;
+     cout<<c1.theprice();
+    return 0;
+}
+
+
+
