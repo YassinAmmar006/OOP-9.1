@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class Character
+{
+private:
+string health;
+
+public:
+Character()
+{
+   name="Yassin";
+   health="Good";
+   level="Excellent";
+
+}
+string gethealth()
+{
+   return health;
+}
+private:
+string level;
+
+public:
+string thelevel()
+{
+   return level;
+}
+private:
+string name;
+
+public:
+string myname()
+{
+   return name;
+}
+
+};
+
+int main()
+{
+   Character p1;
+    cout<<p1.gethealth()<<"\n";
+    cout<<p1.thelevel()<<endl;
+    cout<<p1.myname();
+   return 0;
+}
