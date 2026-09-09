@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+class Patient
+{
+public:
+Patient()
+{
+name="Yassin";
+age="20";
+medicalhistory ="very good";
+}
+private:
+string name;
+public:
+string thename()
+{
+   return name;
+}
+private:
+string age;
+public:
+string theage()
+{
+   return age;
+}
+private:
+string medicalhistory;
+public:
+string themedicalhistory()
+{
+   return medicalhistory;
+}
+
+};
+
+int main()
+{
+  Patient f1;
+  cout<<"The Name: "<<f1.thename()<<endl;
+  cout<<"The age: "<<f1.theage()<<endl;
+  cout<<"The medical history: "<<f1.themedicalhistory();
+   return 0;
+}
